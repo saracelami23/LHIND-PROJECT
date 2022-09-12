@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="PositiveTestSuite"  parallel="tests" thread-count="1">
+
+    <test name="PositiveTest-FF">
+        <parameter name="browser" value="firefox"></parameter>
+        <classes>
+            <class name="TestCases.registerTest" />
+            <class name="TestCases.logInTest" />
+            <class name="TestCases.uploadFileTest" />
+            <class name="TestCases.tableRowsTest" />
+            <class name="TestCases.searchTest" />
+        </classes>
+    </test>
+
+
+</suite>
